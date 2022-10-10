@@ -12,26 +12,26 @@ for (let i = 1; i <= 100; i++) {
 
     //ma che per i multipli di 3 stampi “Fizz” al posto del numero
    if (i % 3 === 0){
-      const element = `<div class="col box box${i}"> Fizz </div>   `
+      const element = `<div class="col box box_fizz"> Fizz </div>   `
 
       row.innerHTML += element;
       console.log(element);
 
     //e per i multipli di 5 stampi “Buzz”.
    } else if(i % 5 === 0){
-    const element = `<div class="col box box${i}"> Buzz </div>   `
+    const element = `<div class="col box box_buzz"> Buzz </div>   `
 
     row.innerHTML += element;
     console.log(element);
     //Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz”.
    } else if (i % 3 === 0 & i % 5 === 0)  {
-    const element = `<div class="col box box${i}"> FizzBuzz </div>   `
+    const element = `<div class="col box box_fizzbuzz"> FizzBuzz </div>   `
 
     row.innerHTML += element;
     console.log(element);
    }
    else{
-    const element = `<div class="col box box${i}"> ${i}</div>   `
+    const element = `<div class="col box box_number"> ${i}</div>   `
 
     row.innerHTML += element;
     console.log(element);
